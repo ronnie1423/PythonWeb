@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Web</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="Icon"
+        href="data:image/jpeg;base64,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">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ayh5rni.css">
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home">Python Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a align="right" class="nav-link active" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a align="right" class="nav-link" href="/sobre mi">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a align="right" class="nav-link" href="/Python">Python</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+<div class="container">
+    <div class="jumbotron">
+        
+   
+     <br><br><h2>
+        <h1>¿QUE ES PYTHON?</h1>
+   
+
+        <strong>Python fue creado a finales de los ochenta​ por Guido van Rossum en el Centro para las Matemáticas y la
+            Informática, en los Países Bajos, como un sucesor del lenguaje de programación ABC, capaz de manejar
+            excepciones e interactuar con el sistema operativo Amoeba.
+
+            El nombre del lenguaje proviene de la afición de su creador por los humoristas británicos Monty Python.
+
+        </strong>
+
+        <br><br>
+        <div align="center">
+            <img src="//upload.wikimedia.org/wikipedia/commons/thumb/6/66/Guido_van_Rossum_OSCON_2006.jpg/130px-Guido_van_Rossum_OSCON_2006.jpg"
+                alt="creador de python" width="400px" height="400px">
+        </div>
+        <br><br><strong> Van Rossum es el principal autor de Python, y su continuo rol central en decidir la dirección
+            de Python es reconocido, refiriéndose a él como Benevolente Dictador Vitalicio sin embargo el 12 de julio de
+            2018 declinó de dicha situación de honor sin dejar un sucesor o sucesora y con una declaración altisonante.
+            <br><br><strong>Python 2.1 fue un trabajo derivado de las versiones 1.6.1 y 2.0. Es a partir de este momento
+                que Python Software Foundation (PSF) pasa a ser dueño del proyecto, organizada como una organización sin
+                ánimo de lucro fundada en el año 2001, tomando como modelo la Apache Software Foundation.​ Incluido en
+                este lanzamiento fue una implementación del scoping más parecida a las reglas de static scoping (del
+                cual Scheme es el originador).​
+
+                Una innovación mayor en Python 2.2 fue la unificación de los tipos en Python (tipos escritos en C), y
+                clases (tipos escritos en Python) dentro de una jerarquía. Esa unificación logró un modelo de objetos de
+                Python puro y consistente.​ También fueron agregados los generadores que fueron inspirados por el
+                lenguaje Icon.</strong>
+
+            <br><br><div class="container d-flex justify-content-center">
+                <a href="https://www.youtube.com/channel/UCmTZ1igWJDFngEzUFlWw9Ow" target="_blank" class="fa fa-youtube" style="font-size: 40px; padding-right: 15px;"></a>
+                <a href="https://www.instagram.com/ronnieyt14/" target="_blank" class="fa fa-instagram" style="font-size: 40px; padding-right: 15px;"></a>
+                <a href="https://twitter.com/MiniDeivd" target="_blank" class="fa fa-twitter" style="font-size: 40px; padding-right: 15px;"></a>
+                <a href="https://www.facebook.com/ronnie.quinones.509/" target="_blank" class="fa fa-facebook" style="font-size: 40px; padding-right: 15px;"></a>
+            </div>
+
+            <br><p>Correo:ronnieburbano@gmail.com</p>
+
+        
+    </h2>
+
+        
+    </div>
+</div>
+
+</body>
+
+</html>
